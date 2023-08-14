@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca:wght@500;700&display=swap');
+
+/*
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Inter', sans-serif;
+*/
+
+:root {
+    --titulo: 'Lexend Deca', sans-serif;
+    --padrao: 'Inter', sans-serif;
+    --cor-background: #532B88;
+    --cor-titulo: #2F184B;
+    --cor3-div: #F4EFFA;
+
+}
+
+@media screen and (max-width:600px){
+    main {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        min-width: 200px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-background);
+    margin: 0 10px;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--titulo);
+    font-weight: 700;
+    font-size: 3.2vmax;
+    color: var(--cor-titulo);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.616);
+}
+
+section {
+    background-color: var(--cor3-div);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--titulo);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > strong > a {
+    color: var(--cor-titulo);
+    font-family: var(--titulo);
+}
