@@ -63,7 +63,13 @@ section {
     margin: 5px;
     padding: 10px;
     border-radius: 25px;
+    text-align: center;
+}
 
+img {
+    height: 120px;
+    width: 170px;
+    margin-top: 10px;
 }
 
 h2 {
@@ -73,6 +79,10 @@ h2 {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-titulo);
 }
 
 footer {
